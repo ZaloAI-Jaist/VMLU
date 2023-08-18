@@ -7,7 +7,6 @@ We hope V-Eval could help developers track the progress and analyze the importan
 - [Leaderboard](#leaderboard)
 - [Data](#data)
 - [How to Evaluate on V-Eval](#how-to-evaluate-on-V-Eval)
-- [How to Submit](#how-to-submit)
 - [TODO](#todo)
 - [Licenses](#licenses)
 
@@ -42,16 +41,8 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
   TBU
   ```
 
-#### Notes
-TBU
-
-
 
 ## How to Evaluate on V-Eval
-TBU
-
-
-## How to Submit
 TBU
 
 
