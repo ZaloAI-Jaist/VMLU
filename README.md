@@ -146,7 +146,7 @@ Below is a LaTeX example from dev.jsonl:
 
 
 ## How to Evaluate on VMLU
-Now, you can evaluate model on the validation set of C-Eval through [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness), which is a framework for few-shot evaluation of autoregressive language models.  
+You can evaluate model on the validation set of VMLU through [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness), which is a framework for few-shot evaluation of autoregressive language models.  
 ```bash
 
 python main.py --model hf-causal --model_args pretrained=EleutherAI/gpt-j-6B --tasks vmlu --device cuda:0
