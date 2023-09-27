@@ -54,6 +54,7 @@ def main(args):
     choices_B = []
     choices_C = []
     choices_D = []
+    choices_E = []
     gold = []
     # Read JSONL files
     data_path = Path(folder)
@@ -84,6 +85,10 @@ def main(args):
                     choices_D.append(choices[3])
                 except:
                     choices_D.append(None)
+                try:
+                    choices_E.append(choices[4])
+                except:
+                    choices_E.append(None)
 
     # Create a DataFrame
     df = pd.DataFrame({
@@ -93,6 +98,7 @@ def main(args):
         "B": choices_B,
         "C": choices_C,
         "D": choices_D,
+        "E": choices_E,
         "gold": gold
     })
     logging.info(df.head())
@@ -100,7 +106,7 @@ def main(args):
     preamble = \
         'Trả lời câu hỏi sau bằng cách đưa ra chữ cái của câu trả lời đúng: '
 
-    template = Template('$preamble\n\n$prompt\n\n $a\n $b\n $c\n $d\nĐáp án:')
+    template = Template('$preamble\n\n$prompt\n\n $a\n $b\n $c\n $d\n $e\nĐáp án:')
 
     def format_input(df, idx):
         prompt = df.loc[idx, 'prompt']
@@ -108,19 +114,20 @@ def main(args):
         b = df.loc[idx, 'B']
         c = df.loc[idx, 'C']
         d = df.loc[idx, 'D']
+        e = df.loc[idx, 'E']
 
         input_text = template.substitute(
-            preamble=preamble, prompt=prompt, a=a, b=b, c=c, d=d)
+            preamble=preamble, prompt=prompt, a=a, b=b, c=c, d=d, e=e)
         
         return input_text
 
     # Test a toy example
     if 'falcon' in llm:
         inputs = tokenizer(format_input(df, 0), return_tensors="pt", return_token_type_ids=False).to(device)
-        outputs = model.generate(**inputs, pad_token_id=tokenizer.eos_token_id)
+        outputs = model.generate(**inputs, max_new_tokens=1, pad_token_id=tokenizer.eos_token_id)
     else:
         inputs = tokenizer(format_input(df, 0), return_tensors="pt").to(device)
-        outputs = model.generate(**inputs)
+        outputs = model.generate(**inputs, max_new_tokens=1)
 
     answer = tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
@@ -133,7 +140,10 @@ def main(args):
     for idx in tqdm(df.index):
         if 'falcon' in llm:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt", return_token_type_ids=False).to(device)
-            outputs = model.generate(**inputs, pad_token_id=tokenizer.eos_token_id)
+            outputs = model.generate(**inputs, max_new_tokens=1, pad_token_id=tokenizer.eos_token_id)
+        elif 'llama' in llm:
+            inputs = tokenizer(format_input(df, idx), return_tensors="pt").to(device)
+            outputs = model.generate(**inputs, max_new_tokens=1)
         else:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt").to(device)
             outputs = model.generate(**inputs)
@@ -143,10 +153,10 @@ def main(args):
         answer = last_element.split()[-1]
         answers.append(answer)
 
-        if answer == df.loc[idx, 'gold']:
+        if answer.strip() == df.loc[idx, 'gold'].strip():
             correct += 1
 
-    df['answer'] = answer
+    df['answer'] = answers
     logging.info(df.head())
 
     # save the answer csv
@@ -161,10 +171,10 @@ if __name__ == "__main__":
 
     # Add command-line arguments
     parser.add_argument("--llm", type=str, default="bigscience/bloom-1b7",
-                        help="Specify the llm value (default: bigscience/bloomz-7b1)")
+                        help="Specify the llm value (default: bigscience/bloom-1b7)")
     parser.add_argument("--device", type=str, default="cuda:6" if torch.cuda.is_available() else "cpu",
-                        help="Specify the device (default: 'cuda:3')")
-    parser.add_argument("--folder", type=str, default="/data/danhvt/veval-1.2/data/" if torch.cuda.is_available() else "cpu",
+                        help="Specify the device (default: 'cuda:2')")
+    parser.add_argument("--folder", type=str, default="code_benchmark/vmlu_v2" if torch.cuda.is_available() else "cpu",
                         help="Specify the folder data")
 
     # Parse the command-line arguments

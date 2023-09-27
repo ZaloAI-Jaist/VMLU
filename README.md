@@ -137,10 +137,7 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 #### Zero-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |
 | ------------------- | :--: | :------------: | :--------: | :---: | :-----: |
-| GPT-4               | TBD |         |        |   |    |
-| ChatGPT             | 49.0 |      58.0      |    48.8    | 50.4  |  51.0   |
-| Claude-v1.3         | 48.5 |      58.6      |    47.3    | 50.1  |  50.5   |
-| Bloomz-mt-176B      | 39.1 |      53.0      |    47.7    | 42.7  |  44.3   |
+| ChatGPT             | 42.15 |      54.32      |    50.5    | 47.53  |  47.69 |
 
 
 #### Five-shot
