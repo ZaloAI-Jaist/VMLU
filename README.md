@@ -135,10 +135,16 @@ Below is a LaTeX example from dev.jsonl:
 Below are zero-shot and five-shot accuracies from the models that we evaluate in the initial release, please visit our official.
 
 #### Zero-shot
-| Model               | STEM | Social Science | Humanities | Other | Average |
-| ------------------- | :--: | :------------: | :--------: | :---: | :-----: |
-| ChatGPT             | 42.15 |      54.32      |    50.5    | 47.53  |  47.69 |
-
+| Model                    | STEM  | Social Science  | Humanities | Other  | Average |
+| -------------------      | :--:  | :------------:  | :--------: | :---:  | :-----: |
+| ChatGPT                  | 42.15 |      54.32      |    50.50   | 47.53  |  47.69  |
+| bigscience/bloomz-7b1    | 34.30 |      47.24      |    41.40   | 39.49  |  39.56  |
+| vilm/vietcuna-3b         | 32.02 |      42.12      |    39.19   | 37.80  |  36.89  |
+| bigscience/bloom-7b      | 25.28 |      27.16      |    26.39   | 28.13  |  26.38  |
+| meta-llama/Llama-2-7b-hf | 24.86 |      27.22      |    25.87   | 27.05  |  25.92  |
+| tiiuae/falcon-7b         | 24.72 |      25.32      |    26.23   | 24.95  |  25.33  |
+| bigscience/bloomz-1b7    | 30.21 |      40.10      |    36.50   | 33.33  |  34.37  |
+| bigscience/bloom-1b7     | 24.33 |      25.55      |    29.15   | 28.19  |  26.62  |
 
 #### Five-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |
