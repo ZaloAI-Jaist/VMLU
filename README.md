@@ -1,4 +1,4 @@
-VMLU is a human-centric benchmark suite specifically designed to evaluate the general capabilities of foundational models with a focus on the Vietnamese language. This benchmark covers 61 subjects spanning four categories: STEM, Humanities, Social Sciences, and more. It ranges in difficulty from an elementary level to an advanced professional level, and tests both general knowledge and problem-solving ability. Please visit our [website](https://vmlu.ai) for more details. 
+VMLU is a human-centric benchmark suite specifically designed to evaluate the general capabilities of foundational models with a focus on the Vietnamese language. This benchmark covers 58 subjects spanning four categories: STEM, Humanities, Social Sciences, and more. It ranges in difficulty from an elementary level to an advanced professional level, and tests both general knowledge and problem-solving ability. Please visit our [website](https://vmlu.ai) for more details. 
 
 We hope VMLU could help developers track the progress and analyze the important strengths/shortcomings of their models.
 
@@ -11,7 +11,7 @@ We hope VMLU could help developers track the progress and analyze the important 
     - [Dataset structure](#dataset-structure)
 - [Leaderboard](#leaderboard)
     - [Zero-shot](#zero-shot)
-    - [Five-shot](#five-shot)
+    - [Few-shot](#few-shot)
 - [How to Evaluate on VMLU](#how-to-evaluate-on-vmlu)
 - [How to submit](#how-to-submit)
 - [TODO](#todo)
@@ -27,11 +27,11 @@ Download the zip file: Please visit our [website](https://vmlu.ai/#DataSection):
 
 
 #### JSONL format
-To facilitate usage, we have organized the subject name handlers and English/Vietnamese names corresponding to 61 subjects. Questions extracted from datasets are presented in both LaTeX and non-LaTeX formats.
+To facilitate usage, we have organized the subject name handlers and English/Vietnamese names corresponding to 58 subjects. Questions extracted from datasets are presented in both LaTeX and non-LaTeX formats.
 
 
 #### Dataset structure
-VMLU dataset covers 61 subjects including 10939 multiple-choice questions and answers in Vietnamese language.
+VMLU dataset covers 58 subjects including 10939 multiple-choice questions and answers in Vietnamese language.
 
 |   Id | Subject                                                 |   Number of questions |
 |-----:|:--------------------------------------------------------|----------------------:|
@@ -138,18 +138,19 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | Model                    | STEM  | Social Science  | Humanities | Other  | Average |
 | -------------------      | :--:  | :------------:  | :--------: | :---:  | :-----: |
 | ChatGPT                  | 42.15 |      54.32      |    50.50   | 47.53  |  47.69  |
-| bigscience/bloomz-7b1    | 34.30 |      47.24      |    41.40   | 39.49  |  39.56  |
-| vilm/vietcuna-3b         | 32.02 |      42.12      |    39.19   | 37.80  |  36.89  |
-| bigscience/bloom-7b      | 25.28 |      27.16      |    26.39   | 28.13  |  26.38  |
-| meta-llama/Llama-2-7b-hf | 24.86 |      27.22      |    25.87   | 27.05  |  25.92  |
-| tiiuae/falcon-7b         | 24.72 |      25.32      |    26.23   | 24.95  |  25.33  |
-| bigscience/bloomz-1b7    | 30.21 |      40.10      |    36.50   | 33.33  |  34.37  |
-| bigscience/bloom-1b7     | 24.33 |      25.55      |    29.15   | 28.19  |  26.62  |
+| bloomz-7b1               | 34.30 |      47.24      |    41.40   | 39.49  |  39.56  |
+| vietcuna-3b              | 32.02 |      42.12      |    39.19   | 37.80  |  36.89  |
+| bloom-7b                 | 25.28 |      27.16      |    26.39   | 28.13  |  26.38  |
+| Llama-2-7b-hf            | 24.86 |      27.22      |    25.87   | 27.05  |  25.92  |
+| falcon-7b                | 24.72 |      25.32      |    26.23   | 24.95  |  25.33  |
+| bloomz-1b7               | 30.21 |      40.10      |    36.50   | 33.33  |  34.37  |
+| bloom-1b7                | 24.33 |      25.55      |    29.15   | 28.19  |  26.62  |
+| vietcuna-7b-v3           | 18.04 |      21.23      |    22.10   | 22.92  |  20.59  |
 
-#### Five-shot
+#### Few-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |
 | ------------------- | :--: | :------------: | :--------: | :---: | :-----: |
-| GPT-4               | TBD  |      TBD       |    TBD     | TBD   |  TBD    |
+| GPT-4               | TBU  |      TBU       |    TBU     | TBU   |  TBU    |
 
 
 
