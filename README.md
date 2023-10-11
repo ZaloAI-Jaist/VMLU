@@ -31,7 +31,7 @@ To facilitate usage, we have organized the subject name handlers and English/Vie
 
 
 #### Dataset structure
-VMLU dataset covers 58 subjects including 10939 multiple-choice questions and answers in Vietnamese language.
+VMLU dataset covers 58 subjects including 10933 multiple-choice questions and answers in Vietnamese language.
 
 |   Id | Subject                                                 |   Number of questions |
 |-----:|:--------------------------------------------------------|----------------------:|
@@ -39,7 +39,7 @@ VMLU dataset covers 58 subjects including 10939 multiple-choice questions and an
 |   02 | elementary_science                                      |                   200 |
 |   03 | middle_school_history                                   |                   200 |
 |   04 | elementary_mathematics                                  |                   200 |
-|   05 | operating_system                                        |                   200 |
+|   05 | operating_system                                        |                   199 |
 |   06 | macroeconomics                                          |                   200 |
 |   07 | microeconomics                                          |                   200 |
 |   08 | high_school_biology                                     |                   200 |
@@ -47,7 +47,7 @@ VMLU dataset covers 58 subjects including 10939 multiple-choice questions and an
 |   10 | middle_school_physics                                   |                   200 |
 |   11 | civil_law                                               |                   200 |
 |   12 | revolutionary_policy_of_the_vietnamese_commununist_part |                   200 |
-|   13 | education_law                                           |                   187 |
+|   13 | education_law                                           |                   186 |
 |   14 | middle_school_literature                                |                   192 |
 |   15 | introduction_to_vietnam_culture                         |                   200 |
 |   16 | business_law                                            |                   200 |
@@ -63,7 +63,7 @@ VMLU dataset covers 58 subjects including 10939 multiple-choice questions and an
 |   26 | middle_school_chemistry                                 |                   200 |
 |   27 | high_school_chemistry                                   |                   200 |
 |   28 | high_school_physics                                     |                   200 |
-|   29 | high_school_civil_education                             |                   200 |
+|   29 | high_school_civil_education                             |                   199 |
 |   30 | high_school_geography                                   |                   179 |
 |   31 | high_school_literature                                  |                   200 |
 |   32 | vietnamese_language_and_literature                      |                   192 |
@@ -88,7 +88,7 @@ VMLU dataset covers 58 subjects including 10939 multiple-choice questions and an
 |   51 | accountant                                              |                   186 |
 |   52 | environmental_engineering                               |                   189 |
 |   53 | metrology_engineer                                      |                   155 |
-|   54 | business_administration                                 |                   192 |
+|   54 | business_administration                                 |                   189 |
 |   58 | high_school_mathematics                                 |                   163 |
 |   59 | middle_school_mathematics                               |                   119 |
 |   60 | discrete_mathematics                                    |                   182 |
@@ -139,14 +139,15 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | -------------------                 | :--:  | :------------:  | :--------: | :---:  | :-----: |
 | GPT-4          |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
 | ChatGPT        |  41.63 |            54.25 |      50.3  |   47.97 |   48.54 |
-| bloomz-7b1     |  33.28 |            47.35 |      42.62 |   40.51 |   39.73 |
-| vietcuna-3b    |  31.83 |            41.37 |      39.88 |   36.59 |   36.71 |
+| KiLM-3B-V1     |  34.58 |            48.53 |      47.65 |   42.75 |   42.31 |
+| bloomz-7b1     |  33.28 |            47.35 |      42.64 |   40.51 |   39.73 |
+| vietcuna-3b    |  31.89 |            42.37 |      39.88 |   36.59 |   36.71 |
 | bloomz-1b7     |  29.46 |            39.17 |      35.35 |   34.04 |   33.67 |
 | vietcuna-7b-v3 |  30.98 |            37.41 |      34.51 |   31.41 |   33.25 |
 | bloom-7b       |  27.32 |            27.99 |      25.47 |   25.87 |   26.64 |
-| bloom-1b7      |  25.68 |            24.45 |      25.65 |   24.89 |   25.31 |
-| Llama-2-7b     |  0.24  |            0.57  |      0.45  |   0.39  |   0.39  |
-| falcon-7b      |  0.11  |            0.11  |      0     |   0.13  |   0.08  |
+| bloom-1b7      |  25.68 |            24.45 |      25.55 |   24.89 |   25.31 |
+| Llama-2-7b     |   0.24 |             0.57 |       0.45 |    0.39 |    0.39 |
+| falcon-7b      |   0.11 |             0.11 |       0    |    0.13 |    0.08 |
 
 #### Few-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |

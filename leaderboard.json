@@ -2,7 +2,7 @@
     {
         "score": 1,
         "model": "ChatGPT",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://platform.openai.com/docs/api-reference/completions",
@@ -15,7 +15,7 @@
     {
         "score": 2,
         "model": "bloomz-7b1",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://huggingface.co/bigscience/bloomz-7b1",
@@ -28,7 +28,7 @@
     {
         "score": 3,
         "model": "vietcuna-3b",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://huggingface.co/vilm/vietcuna-3b",
@@ -41,7 +41,7 @@
     {
         "score": 4,
         "model": "bloom-7b",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://huggingface.co/bigscience/bloom-7b1",
@@ -54,7 +54,7 @@
     {
         "score": 5,
         "model": "Llama-2-7b",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://huggingface.co/meta-llama/Llama-2-7b-hf",
@@ -67,7 +67,7 @@
     {
         "score": 6,
         "model": "falcon-7b",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://huggingface.co/tiiuae/falcon-7b",
@@ -80,7 +80,7 @@
     {
         "score": 7,
         "model": "bloomz-1b7",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://huggingface.co/bigscience/bloomz-1b7",
@@ -93,7 +93,7 @@
     {
         "score": 8,
         "model": "bloom-1b7",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://huggingface.co/bigscience/bloom-1b7",
@@ -106,7 +106,7 @@
     {
         "score": 9,
         "model": "vietcuna-7b-v3",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://huggingface.co/vilm/vietcuna-7b-v3",
@@ -119,7 +119,7 @@
     {
         "score": 10,
         "model": "GPT-4",
-        "creator": "Zalo AILab",
+        "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
         "url": "https://platform.openai.com/docs/api-reference/completions",
@@ -128,5 +128,18 @@
         "social_science": 71.78,
         "humanity": 66.14,
         "other": 60.37
+    },
+    {
+        "score": 11,
+        "model": "KiLM-3B-V1",
+        "creator": "Zalo AI",
+        "submission_date": 1695859200,
+        "evaluation_date": 1695859200,
+        "url": "",
+        "total": 42.31,
+        "stem": 34.58,
+        "social_science": 48.53,
+        "humanity": 47.65,
+        "other": 42.75
     }
 ]
