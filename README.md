@@ -132,20 +132,21 @@ Below is a LaTeX example from dev.jsonl:
 
 ## Leaderboard
 
-Below are zero-shot and five-shot accuracies from the models that we evaluate in the initial release, please visit our official.
+Below are zero-shot and five-shot accuracies from the models that we evaluate in the initial release, please visit our official website.
 
 #### Zero-shot
-| Model                    | STEM  | Social Science  | Humanities | Other  | Average |
-| -------------------      | :--:  | :------------:  | :--------: | :---:  | :-----: |
-| ChatGPT                  | 42.15 |      54.32      |    50.50   | 47.53  |  47.69  |
-| bloomz-7b1               | 34.30 |      47.24      |    41.40   | 39.49  |  39.56  |
-| vietcuna-3b              | 32.02 |      42.12      |    39.19   | 37.80  |  36.89  |
-| bloomz-1b7               | 30.21 |      40.10      |    36.50   | 33.33  |  34.37  |
-| bloom-1b7                | 24.33 |      25.55      |    29.15   | 28.19  |  26.62  |
-| bloom-7b                 | 25.28 |      27.16      |    26.39   | 28.13  |  26.38  |
-| Llama-2-7b-hf            | 24.86 |      27.22      |    25.87   | 27.05  |  25.92  |
-| falcon-7b                | 24.72 |      25.32      |    26.23   | 24.95  |  25.33  |
-| vietcuna-7b-v3           | 18.04 |      21.23      |    22.10   | 22.92  |  20.59  |
+| Model                               | STEM  | Social Science  | Humanities | Other  | Average |
+| -------------------                 | :--:  | :------------:  | :--------: | :---:  | :-----: |
+| GPT-4          |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
+| ChatGPT        |  41.63 |            54.25 |      50.3  |   47.97 |   48.54 |
+| bloomz-7b1     |  33.28 |            47.35 |      42.62 |   40.51 |   39.73 |
+| vietcuna-3b    |  31.83 |            41.37 |      39.88 |   36.59 |   36.71 |
+| bloomz-1b7     |  29.46 |            39.17 |      35.35 |   34.04 |   33.67 |
+| vietcuna-7b-v3 |  30.98 |            37.41 |      34.51 |   31.41 |   33.25 |
+| bloom-7b       |  27.32 |            27.99 |      25.47 |   25.87 |   26.64 |
+| bloom-1b7      |  25.68 |            24.45 |      25.65 |   24.89 |   25.31 |
+| Llama-2-7b     |  0.24  |            0.57  |      0.45  |   0.39  |   0.39  |
+| falcon-7b      |  0.11  |            0.11  |      0     |   0.13  |   0.08  |
 
 #### Few-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |

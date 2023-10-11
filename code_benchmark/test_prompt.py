@@ -104,9 +104,8 @@ def main(args):
     logging.info(df.head())
 
     preamble = \
-        'Trả lời câu hỏi sau bằng cách đưa ra chữ cái của câu trả lời đúng: '
-
-    template = Template('$preamble\n\n$prompt\n\n $a\n $b\n $c\n $d\n $e\nĐáp án:')
+        'Trả lời câu hỏi trắc nghiệm.'
+    template = Template('$preamble\nCâu hỏi: $prompt\n\n Các lựa chọn:\n$a\n $b\n $c\n $d\n $e\nĐáp án đúng là: ')
 
     def format_input(df, idx):
         prompt = df.loc[idx, 'prompt']
@@ -172,9 +171,9 @@ if __name__ == "__main__":
     # Add command-line arguments
     parser.add_argument("--llm", type=str, default="bigscience/bloom-1b7",
                         help="Specify the llm value (default: bigscience/bloom-1b7)")
-    parser.add_argument("--device", type=str, default="cuda:6" if torch.cuda.is_available() else "cpu",
-                        help="Specify the device (default: 'cuda:2')")
-    parser.add_argument("--folder", type=str, default="code_benchmark/vmlu_v2" if torch.cuda.is_available() else "cpu",
+    parser.add_argument("--device", type=str, default="cuda:0" if torch.cuda.is_available() else "cpu",
+                        help="Specify the device (default: 'cuda:0')")
+    parser.add_argument("--folder", type=str, default="./veval-1.2/data/",
                         help="Specify the folder data")
 
     # Parse the command-line arguments
