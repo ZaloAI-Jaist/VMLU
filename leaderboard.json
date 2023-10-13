@@ -40,7 +40,7 @@
     },
     {
         "score": 4,
-        "model": "bloom-7b",
+        "model": "bloom-7b1",
         "creator": "Zalo AI",
         "submission_date": 1695859200,
         "evaluation_date": 1695859200,
@@ -52,7 +52,7 @@
         "total": 25.54
     },
     {
-        "score": 7,
+        "score": 5,
         "model": "bloomz-1b7",
         "creator": "Zalo AI",
         "submission_date": 1695859200,
@@ -65,7 +65,7 @@
         "total": 33.24
     },
     {
-        "score": 8,
+        "score": 6,
         "model": "bloom-1b7",
         "creator": "Zalo AI",
         "submission_date": 1695859200,
@@ -78,7 +78,7 @@
         "total": 25.54
     },
     {
-        "score": 9,
+        "score": 7,
         "model": "vietcuna-7b-v3",
         "creator": "Zalo AI",
         "submission_date": 1695859200,
@@ -91,7 +91,7 @@
         "total": 28.32
     },
     {
-        "score": 10,
+        "score": 8,
         "model": "GPT-4",
         "creator": "Zalo AI",
         "submission_date": 1695859200,
@@ -104,7 +104,7 @@
         "other": 60.37
     },
     {
-        "score": 11,
+        "score": 9,
         "model": "KiLM-7B-v23.9.1",
         "creator": "Zalo AI",
         "submission_date": 1695859200,
@@ -117,7 +117,7 @@
         "other": 42.75
     },
 	{
-        "score": 12,
+        "score": 10,
         "model": "Llama-2-7b-hf",
         "creator": "Zalo AI",
         "submission_date": 1695859200,
@@ -130,7 +130,7 @@
         "other": 28.79
     },
     {
-        "score": 13,
+        "score": 11,
         "model": "ura-llama-7b",
         "creator": "Zalo AI",
         "submission_date": 1695859200,
@@ -141,5 +141,18 @@
         "social_science": 28.66,
         "humanity": 30.79,
         "other": 29.03
+    },
+    {
+        "score": 14,
+        "model": "falcon-7b",
+        "creator": "Zalo AI",
+        "submission_date": 1695859200,
+        "evaluation_date": 1695859200,
+        "url": "https://huggingface.co/tiiuae/falcon-7b",
+        "total": 24.7,
+        "stem": 24.3,
+        "social_science": 24.04,
+        "humanity": 26.1,
+        "other": 23.53
     }
 ]
