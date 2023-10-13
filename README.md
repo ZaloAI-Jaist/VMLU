@@ -134,6 +134,9 @@ Below is a LaTeX example from dev.jsonl:
 
 Below are zero-shot and five-shot accuracies from the models that we evaluate in the initial release, please visit our official website.
 
+<span style="color:red">DISCLAIMER: Please note that evaluating models like LLMs can be challenging, as leaderboards might be susceptible to manipulation, and a small tweak in prompting can lead to totally different results. It's especially concerning because some models are not publicly accessible. For instance, good results can be achieved through distilling answers from stronger models like GPT-4 or even from humans. Therefore, it's important to approach leaderboard scores with caution. Most of the  models assessed here are public With Open Access, which have public weights or APIs for verification.</span>
+
+
 #### Zero-shot
 | Model                               | STEM  | Social Science  | Humanities | Other  | Average |
 | -------------------                 | :--:  | :------------:  | :--------: | :---:  | :-----: |
