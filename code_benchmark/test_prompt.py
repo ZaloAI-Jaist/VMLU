@@ -72,23 +72,23 @@ def main(args):
                 try:
                     choices_A.append(choices[0])
                 except:
-                    choices_A.append(None)
+                    choices_A.append('')
                 try:
                     choices_B.append(choices[1])
                 except:
-                    choices_B.append(None)
+                    choices_B.append('')
                 try:
                     choices_C.append(choices[2])
                 except:
-                    choices_C.append(None)
+                    choices_C.append('')
                 try:
                     choices_D.append(choices[3])
                 except:
-                    choices_D.append(None)
+                    choices_D.append('')
                 try:
                     choices_E.append(choices[4])
                 except:
-                    choices_E.append(None)
+                    choices_E.append('')
 
     # Create a DataFrame
     df = pd.DataFrame({
@@ -104,8 +104,9 @@ def main(args):
     logging.info(df.head())
 
     preamble = \
-        'Trả lời câu hỏi trắc nghiệm.'
-    template = Template('$preamble\nCâu hỏi: $prompt\n\n Các lựa chọn:\n$a\n $b\n $c\n $d\n $e\nĐáp án đúng là: ')
+        'Chỉ đưa ra chữ cái đứng trước câu trả lời đúng (A, B, C, D hoặc E) của câu hỏi trắc nghiệm sau: '
+
+    template = Template('$preamble\n\n$prompt\n\n $a\n $b\n $c\n $d\n $e\nĐáp án:')
 
     def format_input(df, idx):
         prompt = df.loc[idx, 'prompt']
@@ -123,7 +124,7 @@ def main(args):
     # Test a toy example
     if 'falcon' in llm:
         inputs = tokenizer(format_input(df, 0), return_tensors="pt", return_token_type_ids=False).to(device)
-        outputs = model.generate(**inputs, max_new_tokens=1, pad_token_id=tokenizer.eos_token_id)
+        outputs = model.generate(**inputs, pad_token_id=tokenizer.eos_token_id)
     else:
         inputs = tokenizer(format_input(df, 0), return_tensors="pt").to(device)
         outputs = model.generate(**inputs, max_new_tokens=1)
@@ -139,13 +140,13 @@ def main(args):
     for idx in tqdm(df.index):
         if 'falcon' in llm:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt", return_token_type_ids=False).to(device)
-            outputs = model.generate(**inputs, max_new_tokens=1, pad_token_id=tokenizer.eos_token_id)
+            outputs = model.generate(**inputs, pad_token_id=tokenizer.eos_token_id)
         elif 'llama' in llm:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt").to(device)
             outputs = model.generate(**inputs, max_new_tokens=1)
         else:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt").to(device)
-            outputs = model.generate(**inputs)
+            outputs = model.generate(**inputs, max_new_tokens=1)
         answer = tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
         last_element = answer[-1]
@@ -171,12 +172,12 @@ if __name__ == "__main__":
     # Add command-line arguments
     parser.add_argument("--llm", type=str, default="bigscience/bloom-1b7",
                         help="Specify the llm value (default: bigscience/bloom-1b7)")
-    parser.add_argument("--device", type=str, default="cuda:0" if torch.cuda.is_available() else "cpu",
-                        help="Specify the device (default: 'cuda:0')")
-    parser.add_argument("--folder", type=str, default="./veval-1.2/data/",
+    parser.add_argument("--device", type=str, default="cuda:6" if torch.cuda.is_available() else "cpu",
+                        help="Specify the device (default: 'cuda:6')")
+    parser.add_argument("--folder", type=str, default="/data/danhvt/veval-1.2/data/",
                         help="Specify the folder data")
 
-    # Parse the command-line arguments
+    # Parse the command-line arguments6
     args = parser.parse_args()
 
     # Call the main function with the parsed arguments
