@@ -183,12 +183,12 @@ You need to first prepare a UTF-8 encoded CSV file with the following format, pl
 
 ```
 ## key within each subject is the "id" field from the dataset
-id, answer
-41-0001, A
-41-0002, A
-41-0003, A
-41-0004, C
-41-0005, A
+id,answer
+41-0001,A
+41-0002,A
+41-0003,A
+41-0004,C
+41-0005,A
 ```
 
 Then you can submit the prepared csv file [here](https://vmlu.ai/submit), **note that you need to first log in to access the submission page**.
