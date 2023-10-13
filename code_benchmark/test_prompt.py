@@ -174,7 +174,7 @@ if __name__ == "__main__":
                         help="Specify the llm value (default: bigscience/bloom-1b7)")
     parser.add_argument("--device", type=str, default="cuda:6" if torch.cuda.is_available() else "cpu",
                         help="Specify the device (default: 'cuda:6')")
-    parser.add_argument("--folder", type=str, default="/data/danhvt/veval-1.2/data/",
+    parser.add_argument("--folder", type=str, default="veval-1.2/data/",
                         help="Specify the folder data")
 
     # Parse the command-line arguments6
