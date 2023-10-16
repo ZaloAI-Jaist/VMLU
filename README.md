@@ -33,66 +33,66 @@ To facilitate usage, we have organized the subject name handlers and English/Vie
 #### Dataset structure
 VMLU dataset covers 58 subjects including 10933 multiple-choice questions and answers in Vietnamese language.
 
-|   Id | Subject                                                 |   Number of questions |
-|-----:|:--------------------------------------------------------|----------------------:|
-|   01 | high_school_history                                     |                   200 |
-|   02 | elementary_science                                      |                   200 |
-|   03 | middle_school_history                                   |                   200 |
-|   04 | elementary_mathematics                                  |                   200 |
-|   05 | operating_system                                        |                   199 |
-|   06 | macroeconomics                                          |                   200 |
-|   07 | microeconomics                                          |                   200 |
-|   08 | high_school_biology                                     |                   200 |
-|   09 | criminal_law                                            |                   197 |
-|   10 | middle_school_physics                                   |                   200 |
-|   11 | civil_law                                               |                   200 |
-|   12 | revolutionary_policy_of_the_vietnamese_commununist_part |                   200 |
-|   13 | education_law                                           |                   186 |
-|   14 | middle_school_literature                                |                   192 |
-|   15 | introduction_to_vietnam_culture                         |                   200 |
-|   16 | business_law                                            |                   200 |
-|   17 | administrative_law                                      |                   109 |
-|   18 | middle_school_civil_education                           |                   196 |
-|   19 | preschool_pedagogy                                      |                   112 |
-|   20 | economic_law                                            |                   191 |
-|   21 | idealogical_and_moral_cultivation                       |                   200 |
-|   22 | elementary_history                                      |                   195 |
-|   23 | middle_school_geography                                 |                   162 |
-|   24 | sociology                                               |                   196 |
-|   25 | middle_school_biology                                   |                   188 |
-|   26 | middle_school_chemistry                                 |                   200 |
-|   27 | high_school_chemistry                                   |                   200 |
-|   28 | high_school_physics                                     |                   200 |
-|   29 | high_school_civil_education                             |                   199 |
-|   30 | high_school_geography                                   |                   179 |
-|   31 | high_school_literature                                  |                   200 |
-|   32 | vietnamese_language_and_literature                      |                   192 |
-|   33 | applied_informatics                                     |                   200 |
-|   34 | history_of_world_civilization                           |                   200 |
-|   35 | introduction_to_laws                                    |                   152 |
-|   36 | principles_of_marxism_and_leninism                      |                   200 |
-|   37 | ho_chi_minh_ideology                                    |                   197 |
-|   38 | logic                                                   |                   192 |
-|   39 | driving_license_certificate                             |                   189 |
-|   40 | tax_civil_servant                                       |                   189 |
-|   41 | civil_servant                                           |                   189 |
-|   42 | introduction_to_chemistry                               |                   197 |
-|   43 | introduction_to_physics                                 |                   191 |
-|   44 | introduction_to_programming                             |                   197 |
-|   45 | computer_architecture                                   |                   200 |
-|   46 | computer_network                                        |                   197 |
-|   47 | electrical_engineering                                  |                   194 |
-|   48 | clinical_pharmacology                                   |                   200 |
-|   49 | internal_basic_medicine                                 |                   189 |
-|   50 | tax_accountant                                          |                   192 |
-|   51 | accountant                                              |                   186 |
-|   52 | environmental_engineering                               |                   189 |
-|   53 | metrology_engineer                                      |                   155 |
-|   54 | business_administration                                 |                   189 |
-|   58 | high_school_mathematics                                 |                   163 |
-|   59 | middle_school_mathematics                               |                   119 |
-|   60 | discrete_mathematics                                    |                   182 |
-|   61 | statistics_and_probability                              |                   192 |
+|   Id | Subject                                                 | Category       |   Number of questions |
+|-----:|:--------------------------------------------------------|:---------------|----------------------:|
+|   01 | Elementary Mathematics                                  | STEM           |                   200 |
+|   02 | Elementary Science                                      | STEM           |                   200 |
+|   03 | Middle School Biology                                   | STEM           |                   188 |
+|   04 | Middle School Chemistry                                 | STEM           |                   200 |
+|   05 | Middle School Mathematics                               | STEM           |                   119 |
+|   06 | Middle School Physics                                   | STEM           |                   200 |
+|   07 | High School Biology                                     | STEM           |                   200 |
+|   08 | High School Chemistry                                   | STEM           |                   200 |
+|   09 | High School Mathematics                                 | STEM           |                   163 |
+|   10 | High School Physics                                     | STEM           |                   200 |
+|   11 | Applied Informatics                                     | STEM           |                   200 |
+|   12 | Computer Architecture                                   | STEM           |                   200 |
+|   13 | Computer Network                                        | STEM           |                   197 |
+|   14 | Discrete Mathematics                                    | STEM           |                   182 |
+|   15 | Electrical Engineering                                  | STEM           |                   194 |
+|   16 | Introduction to Chemistry                               | STEM           |                   197 |
+|   17 | Introduction to Physics                                 | STEM           |                   191 |
+|   18 | Introduction to Programming                             | STEM           |                   197 |
+|   19 | Metrology Engineer                                      | STEM           |                   155 |
+|   20 | Operating System                                        | STEM           |                   200 |
+|   21 | Statistics and Probability                              | STEM           |                   192 |
+|   22 | Middle School Civil Education                           | Social Science |                   196 |
+|   23 | Middle School Geography                                 | Social Science |                   162 |
+|   24 | High School Civil Education                             | Social Science |                   200 |
+|   25 | High School Geography                                   | Social Science |                   179 |
+|   26 | Business Administration                                 | Social Science |                   192 |
+|   27 | Ho Chi Minh Ideology                                    | Social Science |                   197 |
+|   28 | Macroeconomics                                          | Social Science |                   200 |
+|   29 | Microeconomics                                          | Social Science |                   200 |
+|   30 | Principles of Marxism and Leninism                      | Social Science |                   200 |
+|   31 | Sociology                                               | Social Science |                   196 |
+|   32 | Elementary History                                      | Humanity       |                   195 |
+|   33 | Middle School History                                   | Humanity       |                   200 |
+|   34 | Middle School Literature                                | Humanity       |                   192 |
+|   35 | High School History                                     | Humanity       |                   200 |
+|   36 | High School Literature                                  | Humanity       |                   200 |
+|   37 | Administrative Law                                      | Humanity       |                   109 |
+|   38 | Business Law                                            | Humanity       |                   200 |
+|   39 | Civil Law                                               | Humanity       |                   200 |
+|   40 | Criminal Law                                            | Humanity       |                   197 |
+|   41 | Economic Law                                            | Humanity       |                   191 |
+|   42 | Education Law                                           | Humanity       |                   187 |
+|   43 | History of World Civilization                           | Humanity       |                   200 |
+|   44 | Idealogical and Moral Cultivation                       | Humanity       |                   200 |
+|   45 | Introduction to Laws                                    | Humanity       |                   152 |
+|   46 | Introduction to Vietnam Culture                         | Humanity       |                   200 |
+|   47 | Logic                                                   | Humanity       |                   192 |
+|   48 | Revolutionary Policy of the Vietnamese Commununist Part | Humanity       |                   200 |
+|   49 | Vietnamese Language and Literature                      | Humanity       |                   192 |
+|   50 | Accountant                                              | Other          |                   186 |
+|   51 | Clinical Pharmacology                                   | Other          |                   200 |
+|   52 | Environmental Engineering                               | Other          |                   189 |
+|   53 | Internal Basic Medicine                                 | Other          |                   189 |
+|   54 | Preschool Pedagogy                                      | Other          |                   112 |
+|   55 | Tax Accountant                                          | Other          |                   192 |
+|   56 | Tax Civil Servant                                       | Other          |                   189 |
+|   57 | Civil Servant                                           | Other          |                   189 |
+|   58 | Driving License Certificate                             | Other          |                   189 |
 
 
 Below is a non-LaTeX example from dev.jsonl:
@@ -100,12 +100,12 @@ Below is a non-LaTeX example from dev.jsonl:
   ```
   {
     "id": "51-0001",
-    "question": "Những trường hợp nào sau đây được xác định là nghiệp vụ kinh tế phát sinh và ghi vào sổ kế toán.",
+    "question": "Các phát biểu ĐÚNG về ĐỊNH NGHĨA Dược lâm sàng, NGOẠI TRỪ:",
     "choices": [
-      "A. Ký hợp đồng thuê nhà xưởng để sản xuất, giá trị hợp đồng 20 triệu đồng/năm",
-      "B. Mua TSCĐ 50 triệu chưa thanh toán",
-      "C. Nhận được lệnh chi tiền phục vụ tiếp khách của doanh nghiệp 5 triệu",
-      "D. Tất cả các trường hợp trên"
+      'A. Là ngành khoa học về sử dụng thuốc hợp lý',
+      'B. Nghiên cứu phát triển kinh tế dược bệnh viện',
+      'C. Giúp tối ưu hóa việc sử dụng thuốc trên cơ sở về dược và y sinh học',
+      'D. Đối tượng chính của môn học dược lâm sàng là thuốc và người bệnh'
     ],
     "answer": "B"
   }
