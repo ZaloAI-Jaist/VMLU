@@ -31,7 +31,7 @@ To facilitate usage, we have organized the subject name handlers and English/Vie
 
 
 #### Dataset structure
-VMLU dataset covers 58 subjects including 10933 multiple-choice questions and answers in Vietnamese language.
+VMLU dataset covers 58 subjects including 10,880 multiple-choice questions and answers in Vietnamese language.
 
 |   Id | Subject                                                 | Category       |   Number of questions |
 |-----:|:--------------------------------------------------------|:---------------|----------------------:|
@@ -71,15 +71,15 @@ VMLU dataset covers 58 subjects including 10933 multiple-choice questions and an
 |   34 | Middle School Literature                                | Humanity       |                   192 |
 |   35 | High School History                                     | Humanity       |                   200 |
 |   36 | High School Literature                                  | Humanity       |                   200 |
-|   37 | Administrative Law                                      | Humanity       |                   109 |
-|   38 | Business Law                                            | Humanity       |                   200 |
+|   37 | Administrative Law                                      | Humanity       |                   100 |
+|   38 | Business Law                                            | Humanity       |                   197 |
 |   39 | Civil Law                                               | Humanity       |                   200 |
-|   40 | Criminal Law                                            | Humanity       |                   197 |
-|   41 | Economic Law                                            | Humanity       |                   191 |
-|   42 | Education Law                                           | Humanity       |                   187 |
+|   40 | Criminal Law                                            | Humanity       |                   180 |
+|   41 | Economic Law                                            | Humanity       |                   178 |
+|   42 | Education Law                                           | Humanity       |                   183 |
 |   43 | History of World Civilization                           | Humanity       |                   200 |
 |   44 | Idealogical and Moral Cultivation                       | Humanity       |                   200 |
-|   45 | Introduction to Laws                                    | Humanity       |                   152 |
+|   45 | Introduction to Laws                                    | Humanity       |                   139 |
 |   46 | Introduction to Vietnam Culture                         | Humanity       |                   200 |
 |   47 | Logic                                                   | Humanity       |                   192 |
 |   48 | Revolutionary Policy of the Vietnamese Commununist Part | Humanity       |                   200 |
