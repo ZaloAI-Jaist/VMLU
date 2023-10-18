@@ -162,16 +162,7 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 
 
 ## How to Evaluate on VMLU
-You can evaluate model on the validation set of VMLU through [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness), which is a framework for few-shot evaluation of autoregressive language models.
-
-```bash
-
-python main.py --model hf-causal --model_args pretrained=EleutherAI/gpt-j-6B --tasks vmlu --device cuda:0
-```
-Please refer to [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) for more details.
-
-
-Or you can just follow our code
+You can just follow our code
 ```bash
 cd code_benchmark;
 GPTKEY='<YOUR GPT KEY>' python test_gpt.py
