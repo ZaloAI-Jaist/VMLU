@@ -144,6 +144,7 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | ChatGPT             |  41.63 |            54.25 |      50.3  |   47.97 |   48.54 |
 | bloomz-7b1          |  31.99 |            44.92 |      40.43 |   39.71 |   38.04 |
 | vietcuna-3b         |  30.18 |            39.12 |      37.11 |   32.79 |   34.28 |
+| SeaLLM-7B-Hybrid    |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
 | bloomz-1b7          |  28.99 |            38.78 |      34.18 |   35.09 |   33.24 |
 | Qwen-7B             |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
 | ura-llama-7b        |  27.48 |            28.66 |      30.79 |   29.03 |   28.95 |
