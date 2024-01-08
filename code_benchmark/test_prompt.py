@@ -66,7 +66,6 @@ def main(args):
                 ids.append(data["id"])
                 questions.append(data["question"])
                 choices = data["choices"]
- #               gold.append(data["answer"])
                 try:
                     choices_A.append(choices[0])
                 except:
@@ -96,8 +95,7 @@ def main(args):
         "B": choices_B,
         "C": choices_C,
         "D": choices_D,
-        "E": choices_E,
-        "gold": gold
+        "E": choices_E
     })
     logging.info(df.head())
 
@@ -135,7 +133,6 @@ def main(args):
     logging.info('Contruct a toy eg')
     logging.info("Generated answer: %s", answer)
 
-#    correct = 0
     answers = []
 
     start = time.time()
@@ -143,9 +140,6 @@ def main(args):
         if 'falcon' in llm:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt", return_token_type_ids=False).to(device)
             outputs = model.generate(**inputs, pad_token_id=tokenizer.eos_token_id, max_new_tokens=1)
-        elif 'llama' in llm:
-            inputs = tokenizer(format_input(df, idx), return_tensors="pt").to(device)
-            outputs = model.generate(**inputs, max_new_tokens=1)
         elif 'sealion' in llm:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt").to(device)
             outputs = model.generate(inputs["input_ids"], max_new_tokens=1)
@@ -158,8 +152,6 @@ def main(args):
         answer = last_element.split()[-1]
         answers.append(answer)
 
- #       if answer.strip() == df.loc[idx, 'gold'].strip():
- #           correct += 1
     end = time.time()
     duration = end - start
     print('Time taken for running inference: ', duration)
@@ -169,10 +161,6 @@ def main(args):
 
     # save the answer csv
     df[['id','answer']].to_csv(f"./logs/{path}.csv", index = False)
-
-#    accuracy = correct / len(df)
-#    logging.info("Accuracy: %.2f%%", accuracy * 100)
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Your script description here")
