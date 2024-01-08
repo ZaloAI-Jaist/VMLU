@@ -6,8 +6,9 @@ import glob
 import logging  
 import os
 import argparse
+import time
 
-from transformers import AutoModelForCausalLM, BitsAndBytesConfig, AutoTokenizer
+from transformers import AutoModelForCausalLM, BitsAndBytesConfig, AutoTokenizer, AutoConfig
 from string import Template
 from pathlib import Path
 from tqdm import tqdm
@@ -30,22 +31,19 @@ def main(args):
     logging.basicConfig(filename=f"./logs/{path}.log", level=logging.INFO, format='%(asctime)s - %(levelname)s: %(message)s')
     logging.info(f'Model name: {llm}')
 
-    bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_use_double_quant=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.bfloat16,
-    )
-    max_memory = {0: "23GiB", "cpu": "80GiB"}
-
-    model = AutoModelForCausalLM.from_pretrained(llm,
-                                                quantization_config=bnb_config,
-                                                device_map={'':device},
-                                                trust_remote_code=True,
-                                                use_auth_token=False,
-                                                max_memory=max_memory)
+    config = AutoConfig.from_pretrained(llm, trust_remote_code=True)  
+    config.init_device = device
+    # config.attn_config['attn_impl'] = 'triton' # Enable if "triton" installed!
+    
+    model = AutoModelForCausalLM.from_pretrained(  
+        llm, config=config, torch_dtype=torch.bfloat16, trust_remote_code=True  
+        )
+    model.to(device)
     model.config.use_cache = False
-    tokenizer = AutoTokenizer.from_pretrained(llm)
+    if 'sealion' in llm or 'Qwen' in llm:
+        tokenizer = AutoTokenizer.from_pretrained(llm, trust_remote_code=True)
+    else:
+        tokenizer = AutoTokenizer.from_pretrained(llm)
 
     # Create empty lists to store data
     ids = []
@@ -58,7 +56,7 @@ def main(args):
     gold = []
     # Read JSONL files
     data_path = Path(folder)
-    jsonl_files = data_path.glob("*.jsonl")
+    jsonl_files = list(data_path.glob('test.jsonl'))
 
     for file in jsonl_files:
         with open(file, "r", encoding="utf-8") as f:
@@ -68,7 +66,7 @@ def main(args):
                 ids.append(data["id"])
                 questions.append(data["question"])
                 choices = data["choices"]
-                gold.append(data["answer"])
+                gold.append('A')
                 try:
                     choices_A.append(choices[0])
                 except:
@@ -124,7 +122,10 @@ def main(args):
     # Test a toy example
     if 'falcon' in llm:
         inputs = tokenizer(format_input(df, 0), return_tensors="pt", return_token_type_ids=False).to(device)
-        outputs = model.generate(**inputs, pad_token_id=tokenizer.eos_token_id)
+        outputs = model.generate(**inputs, pad_token_id=tokenizer.eos_token_id, max_new_tokens=1)
+    elif 'sealion' in llm:
+        inputs = tokenizer(format_input(df, 0), return_tensors="pt").to(device)
+        outputs = model.generate(inputs["input_ids"], max_new_tokens=1)
     else:
         inputs = tokenizer(format_input(df, 0), return_tensors="pt").to(device)
         outputs = model.generate(**inputs, max_new_tokens=1)
@@ -137,24 +138,31 @@ def main(args):
     correct = 0
     answers = []
 
+    start = time.time()
     for idx in tqdm(df.index):
         if 'falcon' in llm:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt", return_token_type_ids=False).to(device)
-            outputs = model.generate(**inputs, pad_token_id=tokenizer.eos_token_id)
+            outputs = model.generate(**inputs, pad_token_id=tokenizer.eos_token_id, max_new_tokens=1)
         elif 'llama' in llm:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt").to(device)
             outputs = model.generate(**inputs, max_new_tokens=1)
+        elif 'sealion' in llm:
+            inputs = tokenizer(format_input(df, idx), return_tensors="pt").to(device)
+            outputs = model.generate(inputs["input_ids"], max_new_tokens=1)
         else:
             inputs = tokenizer(format_input(df, idx), return_tensors="pt").to(device)
             outputs = model.generate(**inputs, max_new_tokens=1)
-        answer = tokenizer.batch_decode(outputs, skip_special_tokens=True)
+        answer_decoded = tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        last_element = answer[-1]
+        last_element = answer_decoded[-1]
         answer = last_element.split()[-1]
         answers.append(answer)
 
         if answer.strip() == df.loc[idx, 'gold'].strip():
             correct += 1
+    end = time.time()
+    duration = end - start
+    print('Time taken for running inference: ', duration)
 
     df['answer'] = answers
     logging.info(df.head())
@@ -172,9 +180,9 @@ if __name__ == "__main__":
     # Add command-line arguments
     parser.add_argument("--llm", type=str, default="bigscience/bloom-1b7",
                         help="Specify the llm value (default: bigscience/bloom-1b7)")
-    parser.add_argument("--device", type=str, default="cuda:6" if torch.cuda.is_available() else "cpu",
-                        help="Specify the device (default: 'cuda:6')")
-    parser.add_argument("--folder", type=str, default="veval-1.2/data/",
+    parser.add_argument("--device", type=str, default="cuda:3" if torch.cuda.is_available() else "cpu",
+                        help="Specify the device")
+    parser.add_argument("--folder", type=str, default="./vmlu_v1.5/",
                         help="Specify the folder data")
 
     # Parse the command-line arguments6
