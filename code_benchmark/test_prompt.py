@@ -66,7 +66,7 @@ def main(args):
                 ids.append(data["id"])
                 questions.append(data["question"])
                 choices = data["choices"]
-                gold.append('A')
+ #               gold.append(data["answer"])
                 try:
                     choices_A.append(choices[0])
                 except:
@@ -135,7 +135,7 @@ def main(args):
     logging.info('Contruct a toy eg')
     logging.info("Generated answer: %s", answer)
 
-    correct = 0
+#    correct = 0
     answers = []
 
     start = time.time()
@@ -158,8 +158,8 @@ def main(args):
         answer = last_element.split()[-1]
         answers.append(answer)
 
-        if answer.strip() == df.loc[idx, 'gold'].strip():
-            correct += 1
+ #       if answer.strip() == df.loc[idx, 'gold'].strip():
+ #           correct += 1
     end = time.time()
     duration = end - start
     print('Time taken for running inference: ', duration)
@@ -170,8 +170,8 @@ def main(args):
     # save the answer csv
     df[['id','answer']].to_csv(f"./logs/{path}.csv", index = False)
 
-    accuracy = correct / len(df)
-    logging.info("Accuracy: %.2f%%", accuracy * 100)
+#    accuracy = correct / len(df)
+#    logging.info("Accuracy: %.2f%%", accuracy * 100)
 
 
 if __name__ == "__main__":
