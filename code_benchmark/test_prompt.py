@@ -53,7 +53,7 @@ def main(args):
     choices_C = []
     choices_D = []
     choices_E = []
-    gold = []
+
     # Read JSONL files
     data_path = Path(folder)
     jsonl_files = list(data_path.glob('test.jsonl'))
