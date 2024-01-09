@@ -138,22 +138,24 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 
 
 #### Zero-shot
-| Model                               | STEM  | Social Science  | Humanities | Other  | Average |
-| -------------------                 | :--:  | :------------:  | :--------: | :---:  | :-----: |
-| GPT-4               |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
-| ChatGPT             |  41.63 |            54.25 |      50.3  |   47.97 |   48.54 |
-| bloomz-7b1          |  31.99 |            44.92 |      40.43 |   39.71 |   38.04 |
-| vietcuna-3b         |  30.18 |            39.12 |      37.11 |   32.79 |   34.28 |
-| SeaLLM-7B-Hybrid    |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
-| bloomz-1b7          |  28.99 |            38.78 |      34.18 |   35.09 |   33.24 |
-| Qwen-7B             |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
-| ura-llama-7b        |  27.48 |            28.66 |      30.79 |   29.03 |   28.95 |
-| vietcuna-7b-v3      |  26.21 |            31.16 |      29.96 |   26.81 |   28.32 |
-| Llama-2-7b          |  26.75 |            27.57 |      28.67 |   28.79 |   27.81 |
-| bloom-7b1           |  25.66 |            26.84 |      25.71 |   23.47 |   25.54 |
-| bloom-1b7           |  25.53 |            25.45 |      25.95 |   24.86 |   25.54 |
-| falcon-7b           |  24.30 |            24.04 |      26.10 |   23.53 |   24.70 |
-| PhoGPT-7B5-Instruct |  21.97 |            25.93 |      24.32 |   26.00 |   24.01 |
+| Model                           | Base model | STEM  | Social Science  | Humanities | Other  | Average |
+| -------------------             | :-------:  | :--:  | :------------:  | :--------: | :---:  | :-----: |
+| GPT-4                  |  From scratch  |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
+| ChatGPT                |  From scratch  |  43.24 |            51.67 |      46.96 |   46.32 |   46.33 |
+| bloomz-7b1             |  From scratch  |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
+| vbd-llama2-7b-50b-chat |  llama-2-7b    |  31.45 |            40.34 |      40.24 |   39.62 |   36.98 |
+| vietcuna-3b            |  bloomz-3b     |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
+| bloomz-1b7             |  From scratch  |  29.72 |            40.17 |      34.73 |   33.41 |   33.65 |
+| SeaLLM-7B-Hybrid       |  llama-2-7b    |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
+| Qwen-7B                |  From scratch  |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
+| ura-llama-7b           |  llama-2-7b    |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 |
+| vinallama-7b-chat      |  llama-2-7b    |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 |
+| vietcuna-7b-v3         |  bloomz-7b     |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 |
+| bloom-1b7              |  From scratch  |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 |
+| bloom-7b1              |  From scratch  |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
+| falcon-7b              |  From scratch  |  24.19 |            23.59 |      26.72 |   24.73 |   24.96 |
+| PhoGPT-7B5-Instruct    |  From scratch  |  21.97 |            25.93 |      24.32 |   26.00 |   24.01 |
+| Llama-2-7b-hf          |  From scratch  |  21.48 |            23.41 |      24.10 |   23.59 |   22.95 |
 
 #### Few-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |

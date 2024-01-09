@@ -19,12 +19,12 @@ if __name__ == "__main__":
     all_res = []
     for idx, doc in enumerate(tqdm.tqdm(data[:])):
         text_choice = '\n'.join(doc['choices'])
-        prompt = "Trả lời câu hỏi trắc nghiệm sau \n" \
+        prompt = "Chỉ đưa ra chữ cái đứng trước câu trả lời đúng (A, B, C, D hoặc E) của câu hỏi trắc nghiệm sau: \n" \
                 + doc["question"] \
                 + "\n\n" \
                 + text_choice \
                 + "\n" \
-                + "Câu trả lời: " 
+                + "Đáp án: " 
         
         messages = [{"role": "user", "content": prompt}]
         response=None
