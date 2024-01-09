@@ -151,6 +151,7 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | ura-llama-7b           |  llama-2-7b    |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 |
 | vinallama-7b-chat      |  llama-2-7b    |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 |
 | vietcuna-7b-v3         |  bloomz-7b     |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 |
+| sealion7b              |  From scratch  |  26.28 |            28.57 |      27.66 |   27.34 |   26.73 |
 | bloom-1b7              |  From scratch  |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 |
 | bloom-7b1              |  From scratch  |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
 | falcon-7b              |  From scratch  |  24.19 |            23.59 |      26.72 |   24.73 |   24.96 |
