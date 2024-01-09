@@ -168,7 +168,7 @@ if __name__ == "__main__":
     # Add command-line arguments
     parser.add_argument("--llm", type=str, default="bigscience/bloom-1b7",
                         help="Specify the llm value (default: bigscience/bloom-1b7)")
-    parser.add_argument("--device", type=str, default="cuda:3" if torch.cuda.is_available() else "cpu",
+    parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu",
                         help="Specify the device")
     parser.add_argument("--folder", type=str, default="./vmlu_v1.5/",
                         help="Specify the folder data")
