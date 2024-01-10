@@ -142,6 +142,7 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | -------------------             | :-------:  | :--:  | :------------:  | :--------: | :---:  | :-----: |
 | GPT-4                  |  From scratch  |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
 | ChatGPT                |  From scratch  |  43.24 |            51.67 |      46.96 |   46.32 |   46.33 |
+| ViGPT-1.6B-v1          |  From scratch  |  35.06 |            48.72 |      47.20 |   42.54 |   42.34 |
 | bloomz-7b1             |  From scratch  |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
 | vbd-llama2-7b-50b-chat |  llama-2-7b    |  31.45 |            40.34 |      40.24 |   39.62 |   36.98 |
 | vietcuna-3b            |  bloomz-3b     |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
