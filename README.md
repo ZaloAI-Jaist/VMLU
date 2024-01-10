@@ -138,28 +138,28 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 
 
 #### Zero-shot
-| Model                           | Base model | Organization |  Accessibility  |  STEM  | Social Science  | Humanities | Other  | Average |
-| -------------------             | :-------:  | :----------: |  :-----------:  |  :--:  | :------------:  | :--------: | :---:  | :-----: |
-| GPT-4                     |  From scratch  |  OpenAI                                    |  API     |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
-| ChatGPT                   |  From scratch  |  OpenAI                                    |  API     |  43.24 |            51.67 |      46.96 |   46.32 |   46.33 |
-| ViGPT-1.6B-v1             |  From scratch  |  Vin BigData                               |  Private |  35.06 |            48.72 |      47.20 |   42.54 |   42.34 |
-| bloomz-7b1                |  From scratch  |  BigScience                                |  Weight  |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
-| vbd-llama2-7b-50b-chat    |  llama-2-7b    |  Vin BigData                               |  Weight  |  31.45 |            40.34 |      40.24 |   39.62 |   36.98 |
-| vietcuna-3b               |  bloomz-3b     |  Virtual Interactive                       |  Weight  |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
-| bloomz-1b7                |  From scratch  |  BigScience                                |  Weight  |  29.72 |            40.17 |      34.73 |   33.41 |   33.65 |
-| SeaLLM-7B-Hybrid          |  llama-2-7b    |  DAMO Academy                              |  Weight  |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
-| Qwen-7B                   |  From scratch  |  Alibaba Cloud                             |  Weight  |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
-| ura-llama-7b              |  llama-2-7b    |  Ho Chi Minh City University of Technology |  Weight  |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 |
-| vinallama-7b-chat         |  llama-2-7b    |  Virtual Interactive                       |  Weight  |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 |
-| vietcuna-7b-v3            |  bloomz-7b     |  Virtual Interactive                       |  Weight  |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 |
-| sealion7b                 |  From scratch  |  AI Singapore                              |  Weight  |  26.28 |            28.57 |      27.66 |   27.34 |   26.73 |
-| bloom-1b7                 |  From scratch  |  BigScience                                |  Weight  |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 |
-| bloom-7b1                 |  From scratch  |  BigScience                                |  Weight  |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
-| vietnamese-llama2-7b-40GB |  llama-2-7b    |  BKAI - HUST                               |  Weight  |  23.22 |            25.61 |      26.71 |   26.30 |   25.19 |
-| falcon-7b                 |  From scratch  |  Technology Innovation Institute           |  Weight  |  24.19 |            23.59 |      26.72 |   24.73 |   24.96 |
-| PhoGPT-7B5-Instruct       |  From scratch  |  Vin AI                                    |  Weight  |  21.97 |            25.93 |      24.32 |   26.00 |   24.01 |
-| Llama-2-7b-hf             |  From scratch  |  Facebook Research - Meta                  |  Weight  |  21.48 |            23.41 |      24.10 |   23.59 |   22.95 |
-| falcon-7b-instruct        |  From scratch  |  Technology Innovation Institute           |  Weight  |  9.50  |            13.63 |      14.98 |   6.13  |   11.39 |  
+| #  | Model                           | Base model | Organization |  Accessibility  |  STEM  | Social Science  | Humanities | Other  | Average |
+| -- | -------------------             | :-------:  | :----------: |  :-----------:  |  :--:  | :------------:  | :--------: | :---:  | :-----: |
+| 1  | GPT-4                     |  From scratch  |  OpenAI                                    |  API     |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
+| 2  | ChatGPT                   |  From scratch  |  OpenAI                                    |  API     |  43.24 |            51.67 |      46.96 |   46.32 |   46.33 |
+| 3  | ViGPT-1.6B-v1             |  From scratch  |  Vin BigData                               |  Private |  35.06 |            48.72 |      47.20 |   42.54 |   42.34 |
+| 4  | bloomz-7b1                |  From scratch  |  BigScience                                |  Weight  |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
+| 5  | vbd-llama2-7b-50b-chat    |  llama-2-7b    |  Vin BigData                               |  Weight  |  31.45 |            40.34 |      40.24 |   39.62 |   36.98 |
+| 6  | vietcuna-3b               |  bloomz-3b     |  Virtual Interactive                       |  Weight  |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
+| 7  | bloomz-1b7                |  From scratch  |  BigScience                                |  Weight  |  29.72 |            40.17 |      34.73 |   33.41 |   33.65 |
+| 8  | SeaLLM-7B-Hybrid          |  llama-2-7b    |  DAMO Academy                              |  Weight  |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
+| 9  | Qwen-7B                   |  From scratch  |  Alibaba Cloud                             |  Weight  |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
+| 10 | ura-llama-7b              |  llama-2-7b    |  Ho Chi Minh City University of Technology |  Weight  |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 |
+| 11 | vinallama-7b-chat         |  llama-2-7b    |  Virtual Interactive                       |  Weight  |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 |
+| 12 | vietcuna-7b-v3            |  bloomz-7b     |  Virtual Interactive                       |  Weight  |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 |
+| 13 | sealion7b                 |  From scratch  |  AI Singapore                              |  Weight  |  26.28 |            28.57 |      27.66 |   27.34 |   26.73 |
+| 14 | bloom-1b7                 |  From scratch  |  BigScience                                |  Weight  |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 |
+| 15 | bloom-7b1                 |  From scratch  |  BigScience                                |  Weight  |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
+| 16 | vietnamese-llama2-7b-40GB |  llama-2-7b    |  BKAI - HUST                               |  Weight  |  23.22 |            25.61 |      26.71 |   26.30 |   25.19 |
+| 17 | falcon-7b                 |  From scratch  |  Technology Innovation Institute           |  Weight  |  24.19 |            23.59 |      26.72 |   24.73 |   24.96 |
+| 18 | PhoGPT-7B5-Instruct       |  From scratch  |  Vin AI                                    |  Weight  |  21.97 |            25.93 |      24.32 |   26.00 |   24.01 |
+| 19 | Llama-2-7b-hf             |  From scratch  |  Facebook Research - Meta                  |  Weight  |  21.48 |            23.41 |      24.10 |   23.59 |   22.95 |
+| 20 | falcon-7b-instruct        |  From scratch  |  Technology Innovation Institute           |  Weight  |  9.50  |            13.63 |      14.98 |   6.13  |   11.39 |  
 
 #### Few-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |
