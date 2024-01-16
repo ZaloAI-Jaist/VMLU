@@ -147,7 +147,8 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | 3  | ViGPT-1.6B-v1             |  Vin BigData                               | From scratch   |  Private | 08/01/2024 |  35.06 |            48.72 |      47.20 |   42.54 |   42.34 |
 | 4  | Qwen-7B                   |  Alibaba Cloud                             | From scratch   |  Weight  | 08/01/2024 |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
 | 5  | sealion7b                 |  AI Singapore                              | From scratch   |  Weight  | 08/01/2024 |  26.28 |            28.57 |      27.66 |   27.34 |   26.73 |
-| 6  | bloom-1b7                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 || 7  | bloom-7b1                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
+| 6  | bloom-1b7                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 |
+| 7  | bloom-7b1                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
 | 8  | falcon-7b                 |  Technology Innovation Institute           | From scratch   |  Weight  | 08/01/2024 |  24.19 |            23.59 |      26.72 |   24.73 |   24.96 |
 | 9  | PhoGPT-7B5-Instruct       |  Vin AI                                    | From scratch   |  Weight  | 08/01/2024 |  21.97 |            25.93 |      24.32 |   26.00 |   24.01 |
 | 10 | Llama-2-7b-hf             |  Facebook Research - Meta                  | From scratch   |  Weight  | 08/01/2024 |  21.48 |            23.41 |      24.10 |   23.59 |   22.95 |
@@ -162,7 +163,10 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | 4  | vietcuna-3b               |  Virtual Interactive                       | bloomz-3b      |  Weight  | 08/01/2024 |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
 | 5  | bloomz-1b7                |  BigScience                                | bloom-1b7      |  Weight  | 08/01/2024 |  29.72 |            40.17 |      34.73 |   33.41 |   33.65 |
 | 6  | SeaLLM-7B-Hybrid          |  DAMO Academy                              | llama-2-7b     |  Weight  | 08/01/2024 |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
-| 7  | ura-llama-7b              |  Ho Chi Minh City University of Technology | llama-2-7b     |  Weight  | 08/01/2024 |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 || 8  | vinallama-7b-chat         |  Virtual Interactive                       | llama-2-7b     |  Weight  | 08/01/2024 |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 || 9  | vietcuna-7b-v3            |  Virtual Interactive                       | bloomz-7b      |  Weight  | 08/01/2024 |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 || 10 | vietnamese-llama2-7b-40GB |  BKAI - HUST                               | llama-2-7b     |  Weight  | 08/01/2024 |  23.22 |            25.61 |      26.71 |   26.30 |   25.19 |
+| 7  | ura-llama-7b              |  Ho Chi Minh City University of Technology | llama-2-7b     |  Weight  | 08/01/2024 |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 |
+| 8  | vinallama-7b-chat         |  Virtual Interactive                       | llama-2-7b     |  Weight  | 08/01/2024 |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 |
+| 9  | vietcuna-7b-v3            |  Virtual Interactive                       | bloomz-7b      |  Weight  | 08/01/2024 |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 |
+| 10 | vietnamese-llama-7b-40GB  |  BKAI - HUST                               | llama-2-7b     |  Weight  | 08/01/2024 |  23.22 |            25.61 |      26.71 |   26.30 |   25.19 |
 
 #### Few-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |
