@@ -157,7 +157,7 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 
 | #  | Model                           |  Organization  | Base Model |  Accessibility  | Evaluation Date | STEM  | Social Science  | Humanities | Other  | Average |
 | -- | -------------------             |  :---------:   | :--------: |  :-----------:  | :-----------:   | :--:  | :------------:  | :--------: | :---:  | :-----: |
-| 1  | viet-mistral-sft-v1       |  UONLP x Ontocord                          | Mistral-7B-v0.1|  Weight  | 15/01/2024 |  43.43 |            57.02 |      55.12 |   48.01 |   50.07 |
+| 1  | Vistral-7B-Chat           |  UONLP x Ontocord                          | Mistral-7B-v0.1|  Weight  | 15/01/2024 |  43.43 |            57.02 |      55.12 |   48.01 |   50.07 |
 | 2  | bloomz-7b1                |  BigScience                                | bloom-7b1      |  Weight  | 08/01/2024 |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
 | 3  | vbd-llama2-7b-50b-chat    |  Vin BigData                               | llama-2-7b     |  Weight  | 08/01/2024 |  31.45 |            40.34 |      40.24 |   39.62 |   36.98 |
 | 4  | vietcuna-3b               |  Virtual Interactive                       | bloomz-3b      |  Weight  | 08/01/2024 |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
