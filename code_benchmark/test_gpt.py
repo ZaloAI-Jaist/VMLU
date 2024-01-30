@@ -63,5 +63,5 @@ if __name__ == "__main__":
     
     df = pd.DataFrame(all_res)
     df['answer'] = df.answer.map(lambda x: x[0].lower())
-    df['answer'] = df['answer'].map(lambda x: re.sub(r'[^abcd]', '', x))
+    df['answer'] = df['answer'].map(lambda x: re.sub(r'[^abcde]', '', x))
     submission_csv = df[['id', 'answer']].to_csv('submission.csv', index=None)

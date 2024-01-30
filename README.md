@@ -143,7 +143,7 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | #  | Model                           |  Organization  | Base Model |  Accessibility  | Evaluation Date | STEM  | Social Science  | Humanities | Other  | Average |
 | -- | -------------------             |  :---------:   | :--------: |  :-----------:  | :-----------:   | :--:  | :------------:  | :--------: | :---:  | :-----: |
 | 1  | GPT-4                     |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
-| 2  | ChatGPT                   |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  43.24 |            51.67 |      46.96 |   46.32 |   46.33 |
+| 2  | ChatGPT                   |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  43.31 |            51.52 |      46.88 |   46.9  |   46.39 |
 | 3  | ViGPT-1.6B-v1             |  Vin BigData                               | From scratch   |  Private | 08/01/2024 |  35.06 |            48.72 |      47.20 |   42.54 |   42.34 |
 | 4  | Qwen-7B                   |  Alibaba Cloud                             | From scratch   |  Weight  | 08/01/2024 |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
 | 5  | sealion7b                 |  AI Singapore                              | From scratch   |  Weight  | 08/01/2024 |  26.28 |            28.57 |      27.66 |   27.34 |   26.73 |
