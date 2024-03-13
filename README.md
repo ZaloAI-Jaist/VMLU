@@ -143,16 +143,19 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | #  | Model                           |  Organization  | Base Model |  Accessibility  | Evaluation Date | STEM  | Social Science  | Humanities | Other  | Average |
 | -- | -------------------             |  :---------:   | :--------: |  :-----------:  | :-----------:   | :--:  | :------------:  | :--------: | :---:  | :-----: |
 | 1  | GPT-4                     |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
-| 2  | ChatGPT                   |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  43.31 |            51.52 |      46.88 |   46.9  |   46.39 |
-| 3  | ViGPT-1.6B-v1             |  Vin BigData                               | From scratch   |  Private | 08/01/2024 |  35.06 |            48.72 |      47.20 |   42.54 |   42.34 |
-| 4  | Qwen-7B                   |  Alibaba Cloud                             | From scratch   |  Weight  | 08/01/2024 |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
-| 5  | sealion7b                 |  AI Singapore                              | From scratch   |  Weight  | 08/01/2024 |  26.28 |            28.57 |      27.66 |   27.34 |   26.73 |
-| 6  | bloom-1b7                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 |
-| 7  | bloom-7b1                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
-| 8  | falcon-7b                 |  Technology Innovation Institute           | From scratch   |  Weight  | 08/01/2024 |  24.19 |            23.59 |      26.72 |   24.73 |   24.96 |
-| 9  | PhoGPT-7B5-Instruct       |  Vin AI                                    | From scratch   |  Weight  | 08/01/2024 |  21.97 |            25.93 |      24.32 |   26.00 |   24.01 |
-| 10 | Llama-2-7b-hf             |  Facebook Research - Meta                  | From scratch   |  Weight  | 08/01/2024 |  21.48 |            23.41 |      24.10 |   23.59 |   22.95 |
-| 11 | falcon-7b-instruct        |  Technology Innovation Institute           | From scratch   |  Weight  | 08/01/2024 |  9.50  |            13.63 |      14.98 |   6.13  |   11.39 |  
+| 2  | gemini                    |  Google                                    | From scratch   |  API     | 30/01/2024 |  42.80 |            60.31 |      55.35 |   51.30 |   51.03 |
+| 3  | ChatGPT                   |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  43.31 |            51.52 |      46.88 |   46.90 |   46.39 |
+| 4  | ViGPT-1.6B-v1             |  Vin BigData                               | From scratch   |  Private | 08/01/2024 |  35.06 |            48.72 |      47.20 |   42.54 |   42.34 |
+| 5  | gemma-7b-it               |  Google                                    | From scratch   |  Weight  | 22/02/2024 |  39.95 |            44.93 |      43.39 |   40.11 |   41.90 |
+| 6  | Qwen-7B                   |  Alibaba Cloud                             | From scratch   |  Weight  | 08/01/2024 |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
+| 7  | gemma-2b-it               |  Google                                    | From scratch   |  Weight  | 22/02/2024 |  24.39 |            29.59 |      31.01 |   26.81 |   27.72 |
+| 8  | sealion7b                 |  AI Singapore                              | From scratch   |  Weight  | 08/01/2024 |  26.28 |            28.57 |      27.66 |   27.34 |   26.73 |
+| 9  | bloom-1b7                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 |
+| 10 | bloom-7b1                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
+| 11 | falcon-7b                 |  Technology Innovation Institute           | From scratch   |  Weight  | 08/01/2024 |  24.19 |            23.59 |      26.72 |   24.73 |   24.96 |
+| 12 | PhoGPT-7B5-Instruct       |  Vin AI                                    | From scratch   |  Weight  | 08/01/2024 |  21.97 |            25.93 |      24.32 |   26.00 |   24.01 |
+| 13 | Llama-2-7b-hf             |  Facebook Research - Meta                  | From scratch   |  Weight  | 08/01/2024 |  21.48 |            23.41 |      24.10 |   23.59 |   22.95 |
+| 14 | falcon-7b-instruct        |  Technology Innovation Institute           | From scratch   |  Weight  | 08/01/2024 |  9.50  |            13.63 |      14.98 |   6.13  |   11.39 |  
 # <div align="center"><b>Finetuned Models Leaderboard</b></div>
 
 | #  | Model                           |  Organization  | Base Model |  Accessibility  | Evaluation Date | STEM  | Social Science  | Humanities | Other  | Average |
