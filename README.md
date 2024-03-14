@@ -160,17 +160,19 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 
 | #  | Model                           |  Organization  | Base Model |  Accessibility  | Evaluation Date | STEM  | Social Science  | Humanities | Other  | Average |
 | -- | -------------------             |  :---------:   | :--------: |  :-----------:  | :-----------:   | :--:  | :------------:  | :--------: | :---:  | :-----: |
-| 1  | Vistral-7B-Chat           |  UONLP x Ontocord                          | Mistral-7B-v0.1|  Weight  | 15/01/2024 |  43.43 |            57.02 |      55.12 |   48.01 |   50.07 |
-| 2  | SeaLLM-7B-v2              |  DAMO Academy                              | llama-2-7b     |  weight  | 15/02/2024 |  39.95 |            52.03 |      49.38 |   45.27 |   45.79 | 
-| 3  | bloomz-7b1                |  BigScience                                | bloom-7b1      |  Weight  | 08/01/2024 |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
-| 4  | vbd-llama2-7b-50b-chat    |  Vin BigData                               | llama-2-7b     |  Weight  | 08/01/2024 |  31.45 |            40.34 |      40.24 |   39.62 |   36.98 |
-| 5  | vietcuna-3b               |  Virtual Interactive                       | bloomz-3b      |  Weight  | 08/01/2024 |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
-| 6  | bloomz-1b7                |  BigScience                                | bloom-1b7      |  Weight  | 08/01/2024 |  29.72 |            40.17 |      34.73 |   33.41 |   33.65 |
-| 7  | SeaLLM-7B-Hybrid          |  DAMO Academy                              | llama-2-7b     |  Weight  | 08/01/2024 |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
-| 8  | ura-llama-7b              |  Ho Chi Minh City University of Technology | llama-2-7b     |  Weight  | 08/01/2024 |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 |
-| 9  | vinallama-7b-chat         |  Virtual Interactive                       | llama-2-7b     |  Weight  | 08/01/2024 |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 |
-| 10 | vietcuna-7b-v3            |  Virtual Interactive                       | bloomz-7b      |  Weight  | 08/01/2024 |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 |
-| 11 | vietnamese-llama-7b-40GB  |  BKAI - HUST                               | llama-2-7b     |  Weight  | 08/01/2024 |  23.22 |            25.61 |      26.71 |   26.30 |   25.19 |
+| 1  | VNPTAI.IO-14B             |  VNPT AI                                   | Qwen1.5-14B-Chat |  Private | 14/03/2024 |  51.64 |            61.75 |      58.09 |   54.51 |   55.83 |
+| 2  | GreenNode-14b             |  GreenNode.ai                              | Qwen-14b         |  Private | 30/01/2024 |  45.96 |            59.47 |      55.20 |   41.21 |   51.97 |
+| 3  | Vistral-7B-Chat           |  UONLP x Ontocord                          | Mistral-7B-v0.1  |  Weight  | 15/01/2024 |  43.43 |            57.02 |      55.12 |   48.01 |   50.07 |
+| 4  | SeaLLM-7B-v2              |  DAMO Academy                              | llama-2-7b       |  weight  | 15/02/2024 |  39.95 |            52.03 |      49.38 |   45.27 |   45.79 | 
+| 5  | bloomz-7b1                |  BigScience                                | bloom-7b1        |  Weight  | 08/01/2024 |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
+| 6  | vbd-llama2-7b-50b-chat    |  Vin BigData                               | llama-2-7b       |  Weight  | 08/01/2024 |  31.45 |            40.34 |      40.24 |   39.62 |   36.98 |
+| 7  | vietcuna-3b               |  Virtual Interactive                       | bloomz-3b        |  Weight  | 08/01/2024 |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
+| 8  | bloomz-1b7                |  BigScience                                | bloom-1b7        |  Weight  | 08/01/2024 |  29.72 |            40.17 |      34.73 |   33.41 |   33.65 |
+| 9  | SeaLLM-7B-Hybrid          |  DAMO Academy                              | llama-2-7b       |  Weight  | 08/01/2024 |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
+| 10 | ura-llama-7b              |  Ho Chi Minh City University of Technology | llama-2-7b       |  Weight  | 08/01/2024 |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 |
+| 11 | vinallama-7b-chat         |  Virtual Interactive                       | llama-2-7b       |  Weight  | 08/01/2024 |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 |
+| 12 | vietcuna-7b-v3            |  Virtual Interactive                       | bloomz-7b        |  Weight  | 08/01/2024 |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 |
+| 13 | vietnamese-llama-7b-40GB  |  BKAI - HUST                               | llama-2-7b       |  Weight  | 08/01/2024 |  23.22 |            25.61 |      26.71 |   26.30 |   25.19 |
 
 #### Few-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |
