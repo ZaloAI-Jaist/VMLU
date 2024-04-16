@@ -161,7 +161,7 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | #  | Model                           |  Organization  | Base Model |  Accessibility  | Evaluation Date | STEM  | Social Science  | Humanities | Other  | Average |
 | -- | -------------------             |  :---------:   | :--------: |  :-----------:  | :-----------:   | :--:  | :------------:  | :--------: | :---:  | :-----: |
 | 1  | VNPTAI.IO-14B             |  VNPT AI                                   | Qwen1.5-14B-Chat |  Private | 14/03/2024 |  51.64 |            61.75 |      58.09 |   54.51 |   55.83 |
-| 2  | GreenNode-14b             |  GreenNode.ai                              | Qwen-14b         |  Private | 30/01/2024 |  45.96 |            59.47 |      55.20 |   41.21 |   51.97 |
+| 2  | SeaLLM-7B-v2.5            |  DAMO Academy                              | llama-2-7b       |  Private | 09/04/2024 |  49.35 |            60.66 |      55.95 |   49.05 |   53.30 |
 | 3  | Vistral-7B-Chat           |  UONLP x Ontocord                          | Mistral-7B-v0.1  |  Weight  | 15/01/2024 |  43.43 |            57.02 |      55.12 |   48.01 |   50.07 |
 | 4  | SeaLLM-7B-v2              |  DAMO Academy                              | llama-2-7b       |  weight  | 15/02/2024 |  39.95 |            52.03 |      49.38 |   45.27 |   45.79 | 
 | 5  | bloomz-7b1                |  BigScience                                | bloom-7b1        |  Weight  | 08/01/2024 |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
