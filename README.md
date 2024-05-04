@@ -142,20 +142,21 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 #### Zero-shot
 | #  | Model                           |  Organization  | Base Model |  Accessibility  | Evaluation Date | STEM  | Social Science  | Humanities | Other  | Average |
 | -- | -------------------             |  :---------:   | :--------: |  :-----------:  | :-----------:   | :--:  | :------------:  | :--------: | :---:  | :-----: |
-| 1  | GPT-4                     |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
-| 2  | gemini                    |  Google                                    | From scratch   |  API     | 30/01/2024 |  42.80 |            60.31 |      55.35 |   51.30 |   51.03 |
-| 3  | ChatGPT                   |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  43.31 |            51.52 |      46.88 |   46.90 |   46.39 |
-| 4  | ViGPT-1.6B-v1             |  Vin BigData                               | From scratch   |  Private | 08/01/2024 |  35.06 |            48.72 |      47.20 |   42.54 |   42.34 |
-| 5  | gemma-7b-it               |  Google                                    | From scratch   |  Weight  | 22/02/2024 |  39.95 |            44.93 |      43.39 |   40.11 |   41.90 |
-| 6  | Qwen-7B                   |  Alibaba Cloud                             | From scratch   |  Weight  | 08/01/2024 |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
-| 7  | gemma-2b-it               |  Google                                    | From scratch   |  Weight  | 22/02/2024 |  24.39 |            29.59 |      31.01 |   26.81 |   27.72 |
-| 8  | sealion7b                 |  AI Singapore                              | From scratch   |  Weight  | 08/01/2024 |  26.28 |            28.57 |      27.66 |   27.34 |   26.73 |
-| 9  | bloom-1b7                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 |
-| 10 | bloom-7b1                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
-| 11 | falcon-7b                 |  Technology Innovation Institute           | From scratch   |  Weight  | 08/01/2024 |  24.19 |            23.59 |      26.72 |   24.73 |   24.96 |
-| 12 | PhoGPT-7B5-Instruct       |  Vin AI                                    | From scratch   |  Weight  | 08/01/2024 |  21.97 |            25.93 |      24.32 |   26.00 |   24.01 |
-| 13 | Llama-2-7b-hf             |  Facebook Research - Meta                  | From scratch   |  Weight  | 08/01/2024 |  21.48 |            23.41 |      24.10 |   23.59 |   22.95 |
-| 14 | falcon-7b-instruct        |  Technology Innovation Institute           | From scratch   |  Weight  | 08/01/2024 |  9.50  |            13.63 |      14.98 |   6.13  |   11.39 |  
+| 1  | Llama-3-70B               |	Meta                                      | From scratch   |  Weight  |	23/04/2024 |  61.7  |            74.91 |      68.74 |	63.53 |   66.44 |
+| 2  | GPT-4                     |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  63.84 |            71.78 |      66.14 |   60.37 |   65.53 |
+| 3  | gemini                    |  Google                                    | From scratch   |  API     | 30/01/2024 |  42.80 |            60.31 |      55.35 |   51.30 |   51.03 |
+| 4  | ChatGPT                   |  OpenAI                                    | From scratch   |  API     | 08/01/2024 |  43.31 |            51.52 |      46.88 |   46.90 |   46.39 |
+| 5  | ViGPT-1.6B-v1             |  Vin BigData                               | From scratch   |  Private | 08/01/2024 |  35.06 |            48.72 |      47.20 |   42.54 |   42.34 |
+| 6  | gemma-7b-it               |  Google                                    | From scratch   |  Weight  | 22/02/2024 |  39.95 |            44.93 |      43.39 |   40.11 |   41.90 |
+| 7  | Qwen-7B                   |  Alibaba Cloud                             | From scratch   |  Weight  | 08/01/2024 |  30.64 |            35.07 |      34.15 |   32.68 |   32.81 |
+| 8  | gemma-2b-it               |  Google                                    | From scratch   |  Weight  | 22/02/2024 |  24.39 |            29.59 |      31.01 |   26.81 |   27.72 |
+| 9  | sealion7b                 |  AI Singapore                              | From scratch   |  Weight  | 08/01/2024 |  26.28 |            28.57 |      27.66 |   27.34 |   26.73 |
+| 10 | bloom-1b7                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.13 |            25.09 |      26.34 |   25.19 |   25.51 |
+| 11 | bloom-7b1                 |  BigScience                                | From scratch   |  Weight  | 08/01/2024 |  25.08 |            26.26 |      25.74 |   24.59 |   25.41 |
+| 12 | falcon-7b                 |  Technology Innovation Institute           | From scratch   |  Weight  | 08/01/2024 |  24.19 |            23.59 |      26.72 |   24.73 |   24.96 |
+| 13 | PhoGPT-7B5-Instruct       |  Vin AI                                    | From scratch   |  Weight  | 08/01/2024 |  21.97 |            25.93 |      24.32 |   26.00 |   24.01 |
+| 14 | Llama-2-7b-hf             |  Facebook Research - Meta                  | From scratch   |  Weight  | 08/01/2024 |  21.48 |            23.41 |      24.10 |   23.59 |   22.95 |
+| 15 | falcon-7b-instruct        |  Technology Innovation Institute           | From scratch   |  Weight  | 08/01/2024 |  9.50  |            13.63 |      14.98 |   6.13  |   11.39 |  
 # <div align="center"><b>Finetuned Models Leaderboard</b></div>
 
 | #  | Model                           |  Organization  | Base Model |  Accessibility  | Evaluation Date | STEM  | Social Science  | Humanities | Other  | Average |
@@ -163,18 +164,19 @@ Below are zero-shot and five-shot accuracies from the models that we evaluate in
 | 1  | VNPTAI.IO-14B             |  VNPT AI                                   | Qwen1.5-14B-Chat |  Private | 14/03/2024 |  51.64 |            61.75 |      58.09 |   54.51 |   55.83 |
 | 2  | SeaLLM-7B-v2.5            |  DAMO Academy                              | llama-2-7b       |  Private | 09/04/2024 |  49.35 |            60.66 |      55.95 |   49.05 |   53.30 |
 | 3  | Vistral-7B-Chat           |  UONLP x Ontocord                          | Mistral-7B-v0.1  |  Weight  | 15/01/2024 |  43.43 |            57.02 |      55.12 |   48.01 |   50.07 |
-| 4  | SeaLLM-7B-v2              |  DAMO Academy                              | llama-2-7b       |  weight  | 15/02/2024 |  39.95 |            52.03 |      49.38 |   45.27 |   45.79 | 
-| 5  | SDSRV-7B-chat             |  SDSRV Teams                               | Mistral-7B-v0.1  |  Private | 25/04/2024 |  39.90 |            51.87 |      49.39 |   45.29 |   45.75 |
-| 6  | bloomz-7b1                |  BigScience                                | bloom-7b1        |  Weight  | 08/01/2024 |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
-| 7  | T-Llama                   |  FPTU HCM                                  | llama-2-7b       |  Weight  | 20/03/2024 |  32.20 |            43.15 |      40.31 |   36.57 |   37.28 |
-| 8  | vbd-llama2-7b-50b-chat    |  Vin BigData                               | llama-2-7b       |  Weight  | 08/01/2024 |  31.45 |            40.34 |      40.24 |   39.62 |   36.98 |
-| 9  | vietcuna-3b               |  Virtual Interactive                       | bloomz-3b        |  Weight  | 08/01/2024 |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
-| 10 | bloomz-1b7                |  BigScience                                | bloom-1b7        |  Weight  | 08/01/2024 |  29.72 |            40.17 |      34.73 |   33.41 |   33.65 |
-| 11 | SeaLLM-7B-Hybrid          |  DAMO Academy                              | llama-2-7b       |  Weight  | 08/01/2024 |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
-| 12 | ura-llama-7b              |  Ho Chi Minh City University of Technology | llama-2-7b       |  Weight  | 08/01/2024 |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 |
-| 13 | vinallama-7b-chat         |  Virtual Interactive                       | llama-2-7b       |  Weight  | 08/01/2024 |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 |
-| 14 | vietcuna-7b-v3            |  Virtual Interactive                       | bloomz-7b        |  Weight  | 08/01/2024 |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 |
-| 15 | vietnamese-llama-7b-40GB  |  BKAI - HUST                               | llama-2-7b       |  Weight  | 08/01/2024 |  23.22 |            25.61 |      26.71 |   26.30 |   25.19 |
+| 4  | SDSRV-7B-chat             |  SDSRV Teams                               | Mistral-7B-v0.1  |  Private | 04/05/2024 |  36.29 |            60.55 |      55.95 |   49.05 |   48.55 |
+| 5  | Arcanic Cono 1.5          |  Arcanic AI                                | Mistral-7B-v0.1  |  API     | 04/05/2024 |  42.11 |            52.44 |      51.97 |   45.36 |   47.45 |
+| 6  | SeaLLM-7B-v2              |  DAMO Academy                              | llama-2-7b       |  weight  | 15/02/2024 |  39.95 |            52.03 |      49.38 |   45.27 |   45.79 | 
+| 7  | bloomz-7b1                |  BigScience                                | bloom-7b1        |  Weight  | 08/01/2024 |  32.63 |            45.73 |      41.85 |   39.89 |   38.87 |
+| 8  | T-Llama                   |  FPTU HCM                                  | llama-2-7b       |  Weight  | 20/03/2024 |  32.20 |            43.15 |      40.31 |   36.57 |   37.28 |
+| 9  | vbd-llama2-7b-50b-chat    |  Vin BigData                               | llama-2-7b       |  Weight  | 08/01/2024 |  31.45 |            40.34 |      40.24 |   39.62 |   36.98 |
+| 10  | vietcuna-3b               |  Virtual Interactive                       | bloomz-3b        |  Weight  | 08/01/2024 |  30.12 |            39.92 |      37.86 |   33.83 |   34.79 |
+| 11 | bloomz-1b7                |  BigScience                                | bloom-1b7        |  Weight  | 08/01/2024 |  29.72 |            40.17 |      34.73 |   33.41 |   33.65 |
+| 12 | SeaLLM-7B-Hybrid          |  DAMO Academy                              | llama-2-7b       |  Weight  | 08/01/2024 |  29.49 |            34.61 |      36.68 |   34.52 |   33.39 |
+| 13 | ura-llama-7b              |  Ho Chi Minh City University of Technology | llama-2-7b       |  Weight  | 08/01/2024 |  29.19 |            33.31 |      34.64 |   32.97 |   32.18 |
+| 14 | vinallama-7b-chat         |  Virtual Interactive                       | llama-2-7b       |  Weight  | 08/01/2024 |  25.70 |            34.50 |      33.87 |   31.41 |   30.64 |
+| 15 | vietcuna-7b-v3            |  Virtual Interactive                       | bloomz-7b        |  Weight  | 08/01/2024 |  28.70 |            33.94 |      31.32 |   28.24 |   30.34 |
+| 16 | vietnamese-llama-7b-40GB  |  BKAI - HUST                               | llama-2-7b       |  Weight  | 08/01/2024 |  23.22 |            25.61 |      26.71 |   26.30 |   25.19 |
 
 #### Few-shot
 | Model               | STEM | Social Science | Humanities | Other | Average |
